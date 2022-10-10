@@ -27,3 +27,8 @@ select * from Employee_payroll
 select Salary from Employee_payroll where Name= 'Bill'
 select Salary,Name from Employee_payroll where StartDate between ('20-04-2019') and ('25-04-2016')
 select Salary from Employee_payroll where Id=4
+
+-------UC6 Add one row Name as Gender in the table-----
+ALTER TABLE Employee_payroll ADD gender varchar(20)
+UPDATE Employee_payroll set Gender = 'M' where Name= 'Bill' or Name = 'Charlie'
+UPDATE Employee_payroll set Gender = 'F' where Name= 'payal' or Name= 'Ritu' or Name= 'Minu'
