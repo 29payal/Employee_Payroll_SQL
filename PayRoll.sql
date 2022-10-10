@@ -22,3 +22,8 @@ insert into Employee_payroll values
 
 --------------------UC4 Retrive Data into Table---------
 select * from Employee_payroll 
+
+-------UC5 Retrieve salary data on a condition-----
+select Salary from Employee_payroll where Name= 'Bill'
+select Salary,Name from Employee_payroll where StartDate between ('20-04-2019') and ('25-04-2016')
+select Salary from Employee_payroll where Id=4
